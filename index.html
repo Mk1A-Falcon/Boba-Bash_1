@@ -1,5 +1,5 @@
 <!DOCTYPE html> <!--This tells the browser that the currently selected file is a html file, if you do not use this tag,
- it really wouldn't matter but the browser would refer to an older deciprecated version of html-->
+ it really wouldn't matter but the browser would refer to an older deprecated version of html which is prone to bugs and a lot of missing features!-->
 
 <!--
 
@@ -14,16 +14,27 @@ HTML TAGS REQUIRE BOTH A ENDING AND OPENING CLAUSE E.G. <p> and </p>
 There are some exceptions for this and are called Void Elements, e.g.
 <link> used for linking external items/assets to the webpage and <img> used for inserting in images 
 
+~~Html files using proper <DOCTYPE>(which we defined above)have a <html> tag(single one for whole page) have two nested elements which contain the whole webpage!
+  These are,
+    <head></head> --=> the part that helps the website run/render but in itself isnt the reason of the actual content
+    For example instead of linking a .css file, we can use the html tag <style></style>
+  And,
+    <body></body> --=> the part that is actually shown in the webpage! Another analogy would be that- you put a normal <p> ( stands for paragraph and used for text elements )
+    so while the text itself is in the "visible" part
+
+
+
+
 =>~~~  CSS BASICS  ~~~<=
 CSS basically applies formatting/styling to any pre defined html element
 Consider it an way of changing that one photo's dimensions in a webpage using code since there isn't really a way to resize it normally
 Professionally, it is kept in another .css file like styles.css and refrenced using the <link> element with the relation "stylesheet"
 You can also keep it in the html file itself locally, which wouldn't require linking via <link>
-Through the <style> </style> elements (kept in head tag but not required(more like a visual contraption))
+Through the <style> </style> elements (kept in <head> html tag but not required(more like a visual feature/placement))
 
 -->
 
-<html>   <!--This would mark the start of the html page itself,<html> is a basic defining html tag-->
+<html>   <!--This would mark the start of the html page itself,<html> is a basic defining html tag, it defines well, html itself!-->
   <head>  <!-- It is a nested element that defines everything which is necessary for the page but doesn't actually gets shown in the main viewable tab of the webpage-->
     <title>Webpage Tutorial</title> 
     <!-- the thing which comes on the currently selected webpage's tab "website's name" -->
