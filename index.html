@@ -1,5 +1,5 @@
-<!DOCTYPE html> <!--This tells the browser that the currently selected file is a html file, if you do not use this tag,
- it really wouldn't matter but the browser would refer to an older deprecated version of html which is prone to bugs and a lot of missing features!-->
+<!DOCTYPE html> <!--This tells the browser that the currently selected file is a html file. If you do not declare this,
+ it really wouldn't matter i.e. normal *html tags*(refer to line 8) would still work but the browser would refer to an older deprecated version rather than HTML5!(not declaring it opens 1990's Quirks mode which is prone to styling bugs)-->
 
 <!--
 
@@ -8,30 +8,28 @@
 ~~HTML TAGS are anything that define the structure of the actual webpage
 For example there isn't a direct way to copy paste an image into the webpage's code, for this we use the <img> element (for image)
 ~~HTML DOES NOT REQUIRE PROPER INDENTATION!
-That means there isn't a specefic ratio of spaces/tab/new_line required between two or more elements/subelements
+That means there isn't a specific ratio of spaces/tab/new_line required between two or more elements/subelements
 ~~NAMING OF HTML TAGS 
-HTML TAGS REQUIRE BOTH A ENDING AND OPENING CLAUSE E.G. <p> and </p>
+HTML TAGS REQUIRE BOTH AN ENDING AND OPENING CLAUSE E.G. <p> and </p>
 There are some exceptions for this and are called Void Elements, e.g.
 <link> used for linking external items/assets to the webpage and <img> used for inserting in images 
 
-~~Html files using proper <DOCTYPE>(which we defined above)have a <html> tag(single one for whole page) have two nested elements which contain the whole webpage!
+~~Html files using proper <DOCTYPE>(which we declared above) have a <html> tag(single one for whole page) have two nested elements which contain the whole webpage!
   These are,
     <head></head> --=> the part that helps the website run/render but in itself isnt the reason of the actual content
-    For example instead of linking a .css file, we can use the html tag <style></style> in here too(can be used in body too but preffered here)
+    For example can be used to set the "title" of a webpage, youtube music's tab changes it's "tab" name to the name of song on play! (this is configured via js :) but you get the point )
+    For example instead of linking a .css file, we can use the html tag <style></style> in here to recreate the .css content in a single file!
   And,
     <body></body> --=> the part that is actually shown in the webpage! Another analogy would be that- you put a normal <p> ( stands for paragraph and used for text elements )
-    so while the text itself is in the "visible" part, the part which applies color, font size, font, etc. is in the .css file
-
-
-
+    so while the text itself is in the "visible" part, the part which applies color, font size, font, etc. is in the .css file or the <style> tag which is in the <head> tag!
 
 =>~~~  CSS BASICS  ~~~<=
-CSS basically applies formatting/styling to any pre defined html element
-Consider it an way of changing that one photo's dimensions in a webpage using code since there isn't really a way to resize it normally
-Professionally, it is kept in another .css file like styles.css and refrenced using the <link> element with the relation "stylesheet"
-You can also keep it in the html file itself locally, which wouldn't require linking via <link>
-Through the <style> </style> elements (kept in <head> html tag but not required(more like a visual feature/placement))
-CSS defining and syntax will be in styles.css file
+  CSS basically applies formatting/styling to any pre defined html element
+  Consider it an way of changing that one photo's dimensions in a webpage using code since there isn't really a way to resize it normally like a photo's software or a drag and resize option :>
+  Professionally, it is kept in another .css file like styles.css and refrenced using the <link> element with the relation "stylesheet"
+  You can also keep it in the html file itself locally, which wouldn't require linking via <link>
+  Through the <style> </style> elements (kept in <head> html tag but not necessary (putting it in the <body> is invalid html but browsers makeup for the problem))
+  CSS defining and syntax will be in styles.css file
 -->
 
 <html>   <!--This would mark the start of the html page itself,<html> is a basic defining html tag, it defines well, html itself!-->
@@ -39,9 +37,10 @@ CSS defining and syntax will be in styles.css file
     <title>Webpage Tutorial</title> 
     <!-- the thing which comes on the currently selected webpage's tab "website's name" -->
     <link href="styles.css" rel="stylesheet"> 
-    <!--This links the css file's content to this file( here both files are seperate entities and link html element is pulling resources(styling) from a .css file to this .html file, thats crazy!)-->
+    <!--This links the css file's content to this file( here both files are seperate entities and the 'link' html element is pulling resources(styling) from a .css file to this .html file,
+     thats crazy!)-->
   </head>
-
+  
 
   <body>
 
